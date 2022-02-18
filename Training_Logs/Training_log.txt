@@ -1,0 +1,9 @@
+2022-02-18/18:23:34		Data extraction from Astra DB has started
+2022-02-18/18:25:11		Data extraction from Astra DB has started
+2022-02-18/18:25:38		Data extraction from Astra DB has started
+2022-02-18/18:26:02		Data extraction from Astra DB has started
+2022-02-18/18:27:31		Data extraction from Astra DB has started
+2022-02-18/18:30:06		Data extraction from Astra DB has started
+2022-02-18/18:30:39		Data extraction from Astra DB has started
+2022-02-18/18:33:58		Data extraction from Astra DB has started
+2022-02-18/18:34:46		Data extraction from Astra DB has successfully completed
