@@ -7,3 +7,10 @@
 2022-02-18/18:30:39		Data extraction from Astra DB has started
 2022-02-18/18:33:58		Data extraction from Astra DB has started
 2022-02-18/18:34:46		Data extraction from Astra DB has successfully completed
+2022-02-18/19:05:23		'load_data'
+2022-02-18/19:08:29		[Errno 2] No such file or directory: 'Data/processed/airbnb.csv'
+2022-02-18/19:09:06		"['availability_365'] not in index"
+2022-02-18/19:36:08		Data extraction from Astra DB has started
+2022-02-18/19:36:40		Data extraction from Astra DB has successfully completed
+2022-02-18/19:37:15		successfully Removed unwanted columns
+2022-02-18/19:37:16		successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv

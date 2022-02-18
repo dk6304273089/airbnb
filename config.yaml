@@ -8,3 +8,4 @@ Credentials:
 
 Data:
   Raw: Data/Raw/airbnb.csv
+  Processed: Data/processed/airbnb.csv
