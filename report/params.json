@@ -5,7 +5,7 @@
     "colsample_bynode": 1,
     "colsample_bytree": 0.7,
     "enable_categorical": false,
-    "gamma": 0.0,
+    "gamma": 0.4,
     "gpu_id": -1,
     "importance_type": null,
     "interaction_constraints": "",

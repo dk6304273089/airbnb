@@ -3,19 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="01a7a058-8895-44bc-ac2b-b926a9729d4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Raw/airbnb.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/evaluated/airbnb.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/final/airbnb.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/processed/airbnb.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Training_Logs/Training_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/Training_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/LabelEncoder/xgboost/model.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/LabelEncoder/xgboost/standardscaler.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/xgboost.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/xgboost/sc.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/xgboost/sc.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/xgboost/xgboost.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/xgboost/xgboost.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/params.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/params.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/scores.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/scores.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hyper_parameter_tuning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_training.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training and hyper_parameter_tuning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training_and_hyper_parameter_tuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/training_and_hyper_parameter_tuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dvc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dvc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/LabelEncoder/cancellation_policy.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/LabelEncoder/city.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/LabelEncoder/property_type.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/LabelEncoder/room_type.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/xgboost/sc.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/xgboost/xgboost.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extract_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/extract_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/feature_engineering.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature_engineering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/feature_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/feature_selection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

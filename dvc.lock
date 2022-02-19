@@ -1,0 +1,82 @@
+schema: '2.0'
+stages:
+  extract_data:
+    cmd: python src/extract_data.py --config=config.yaml
+    deps:
+    - path: Database/secure-connect-airbnb.zip
+      md5: fe820830868f133c456804c53169d28a
+      size: 12270
+    - path: src/extract_data.py
+      md5: fa82c744f35a979057b0eefd280c3cb9
+      size: 2109
+    outs:
+    - path: Data/Raw/airbnb.csv
+      md5: e4726511aabc58edbc4b281aa7e3b9fc
+      size: 6877190
+  data_cleaning:
+    cmd: python src/data_cleaning.py --config=config.yaml
+    deps:
+    - path: Data/Raw/airbnb.csv
+      md5: e4726511aabc58edbc4b281aa7e3b9fc
+      size: 6877190
+    - path: src/data_cleaning.py
+      md5: cf43a7a98f2f532391e8034765991d4b
+      size: 2810
+    outs:
+    - path: Data/processed/airbnb.csv
+      md5: 1c42eb913a1b6c73ebb7131f674c0400
+      size: 1299238
+  feature_engineering:
+    cmd: python src/feature_engineering.py --config=config.yaml
+    deps:
+    - path: Data/processed/airbnb.csv
+      md5: 1c42eb913a1b6c73ebb7131f674c0400
+      size: 1299238
+    - path: src/feature_engineering.py
+      md5: 4dc2da5f02dc49efcc891158bc662cc4
+      size: 2241
+    outs:
+    - path: Data/evaluated/airbnb.csv
+      md5: 023fc3864d773d000c3b7d854866849f
+      size: 1156201
+  feature_selection:
+    cmd: python src/feature_selection.py --config=config.yaml
+    deps:
+    - path: Data/evaluated/airbnb.csv
+      md5: 023fc3864d773d000c3b7d854866849f
+      size: 1156201
+    - path: src/feature_selection.py
+      md5: 1617ce614467197eb6b75a8143d1f5c1
+      size: 5140
+    outs:
+    - path: Data/final/airbnb.csv
+      md5: 298e860a6362f4bd3a5dcc5135471bf1
+      size: 1023779
+    - path: models/LabelEncoder/cancellation_policy.pkl
+      md5: 78678dcc3b3e1a269b19987639c70eb2
+      size: 312
+    - path: models/LabelEncoder/city.pkl
+      md5: 0f75da97dfc2956a1f845b3b1fa1773b
+      size: 375
+    - path: models/LabelEncoder/property_type.pkl
+      md5: 83380fd8bddf2122056bd1a46288a98e
+      size: 543
+    - path: models/LabelEncoder/room_type.pkl
+      md5: 00c7d679aff323083e1a5e9664e9d743
+      size: 289
+  model_training_and_hyper_parameter_tuning:
+    cmd: python src/training_and_hyper_parameter_tuning.py --config=config.yaml
+    deps:
+    - path: Data/final/airbnb.csv
+      md5: 298e860a6362f4bd3a5dcc5135471bf1
+      size: 1023779
+    - path: src/training_and_hyper_parameter_tuning.py
+      md5: ad51a488365ea871803465b7f50d27e6
+      size: 5724
+    outs:
+    - path: models/xgboost/sc.pkl
+      md5: 7d4de05d5fa094335f0947ffa3826bba
+      size: 1338
+    - path: models/xgboost/xgboost.pkl
+      md5: 3c7963e8cd20f917049513cbc2204f75
+      size: 686767

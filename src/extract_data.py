@@ -27,6 +27,7 @@ class Data_extraction:
 
     def get(self, config_path):
         try:
+            #reading paths from config file
             config = read_params(config_path)
             database= config["database"]["data"]
             id=config["Credentials"]["Client_id"]
@@ -38,6 +39,7 @@ class Data_extraction:
             auth_provider = PlainTextAuthProvider(id,secret)
             cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider, idle_heartbeat_interval=25)
             session = cluster.connect()
+            #connect to Astra DB Online Database
             query="SELECT * FROM air.airbnb";
             log(self.file, "Stage-1 => Data extraction from Astra DB has started")
             df = pd.DataFrame(list(session.execute(query)))

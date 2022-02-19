@@ -1,103 +1,43 @@
-2022-02-18/18:23:34		Data extraction from Astra DB has started
-2022-02-18/18:25:11		Data extraction from Astra DB has started
-2022-02-18/18:25:38		Data extraction from Astra DB has started
-2022-02-18/18:26:02		Data extraction from Astra DB has started
-2022-02-18/18:27:31		Data extraction from Astra DB has started
-2022-02-18/18:30:06		Data extraction from Astra DB has started
-2022-02-18/18:30:39		Data extraction from Astra DB has started
-2022-02-18/18:33:58		Data extraction from Astra DB has started
-2022-02-18/18:34:46		Data extraction from Astra DB has successfully completed
-2022-02-18/19:05:23		'load_data'
-2022-02-18/19:08:29		[Errno 2] No such file or directory: 'Data/processed/airbnb.csv'
-2022-02-18/19:09:06		"['availability_365'] not in index"
-2022-02-18/19:36:08		Data extraction from Astra DB has started
-2022-02-18/19:36:40		Data extraction from Astra DB has successfully completed
-2022-02-18/19:37:15		successfully Removed unwanted columns
-2022-02-18/19:37:16		successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv
-2022-02-18/20:32:25		Stage-2 => successfully Removed unwanted columns
-2022-02-18/20:32:26		Stage-2 => successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv
-2022-02-18/20:56:46		Stage-3 => Error: 'final'
-2022-02-18/20:57:39		Stage-3 => Error: could not convert string to float: 'NSW 2025'
-2022-02-19/12:07:55		Stage-2 => successfully Removed unwanted columns
-2022-02-19/12:07:55		Stage-2 => successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv
-2022-02-19/12:21:02		Stage-3 => successfully Done Feature Engineering and saved the file in Data/evaluated/airbnb.csv
-2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for longitude
-2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for minimum_nights
-2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for price
-2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for Bondi Beach
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Manly
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Surry Hills
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Randwick
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Coogee
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Darlinghurst
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Sydney
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Newtown
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Redfern
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Maroubra
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Paddington
-2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Mosman
-2022-02-19/12:58:45		Stage-3 => Error: list indices must be integers or slices, not str
-2022-02-19/13:05:04		Stage-4 => successfully saved model for city in models/LabelEncoder/city.pkl
-2022-02-19/13:05:04		Stage-4 => successfully saved model for property_type in models/LabelEncoder/property_type.pkl
-2022-02-19/13:05:04		Stage-4 => successfully saved model for room_type in models/LabelEncoder/room_type.pkl
-2022-02-19/13:05:04		Stage-4 => successfully saved model for cancellation_policy in models/LabelEncoder/cancellation_policy.pkl
-2022-02-19/13:05:04		Stage-4 => successfully Handled missing values for the total data
-2022-02-19/13:05:04		Stage-4 => successfully Added new columns 
-2022-02-19/13:05:05		Stage-4 => successfully performed feature selection
-2022-02-19/13:05:05		Stage-4 => successfully saved the final data in Data/final/airbnb.csv
-2022-02-19/14:44:23		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/14:44:23		Stage-5 => successfully implemented normalization
-2022-02-19/14:44:23		Stage-5 => Training started
-2022-02-19/14:44:24		Stage-5 => Error: I/O operation on closed file.
-2022-02-19/14:46:25		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/14:46:25		Stage-5 => successfully implemented normalization
-2022-02-19/14:46:25		Stage-5 => Training started
-2022-02-19/14:46:26		Stage-5 => Error: I/O operation on closed file.
-2022-02-19/14:49:50		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/14:49:50		Stage-5 => successfully implemented normalization
-2022-02-19/14:49:50		Stage-5 => Training started
-2022-02-19/14:49:50		Stage-5 => Error: I/O operation on closed file.
-2022-02-19/14:54:47		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/14:54:47		Stage-5 => successfully implemented normalization
-2022-02-19/14:54:47		Stage-5 => Training started
-2022-02-19/14:54:48		Stage-5 => Error: I/O operation on closed file.
-2022-02-19/15:06:01		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/15:06:01		Stage-5 => successfully implemented normalization
-2022-02-19/15:06:01		Stage-5 => Training started
-2022-02-19/15:06:01		Stage-5 => Training successfully completed and saved the  model in models/xgboost/xgboost.pkl
-2022-02-19/19:08:32		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/19:08:32		Stage-5 => successfully implemented normalization
-2022-02-19/19:08:32		Stage-5 => Training started
-2022-02-19/19:08:33		Stage-5 => Training successfully completed and saved the  model in models/xgboost/xgboost.pkl
-2022-02-19/21:03:39		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/21:03:39		Stage-5 => successfully implemented normalization
-2022-02-19/21:03:39		Stage-5 => Training started
-2022-02-19/21:03:39		Stage-5 => Completed
-2022-02-19/21:03:39		Stage-5 => Hyper parameter tuning started
-2022-02-19/21:06:47		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/21:06:47		Stage-5 => successfully implemented normalization
-2022-02-19/21:06:47		Stage-5 => Training started
-2022-02-19/21:06:47		Stage-5 => Completed
-2022-02-19/21:06:47		Stage-5 => Hyper parameter tuning started
-2022-02-19/21:07:14		Stage-5 => Hyper parameter tuning completed
-2022-02-19/21:07:14		Stage-5 => Model of the accuracy can found in this file report/scores.json
-2022-02-19/21:07:14		Stage-5 => parameters of the model can found in this file report/params.json
-2022-02-19/21:07:14		Stage-5 => Training successfully completed and saved the  model in models/xgboost/xgboost.pkl
-2022-02-19/21:08:43		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/21:08:43		Stage-5 => successfully implemented normalization
-2022-02-19/21:08:43		Stage-5 => Training started
-2022-02-19/21:08:44		Stage-5 => Completed
-2022-02-19/21:08:44		Stage-5 => Hyper parameter tuning started
-2022-02-19/21:09:04		Stage-5 => Hyper parameter tuning completed
-2022-02-19/21:09:04		Stage-5 => Model of the accuracy can found in this file report/scores.json
-2022-02-19/21:09:04		Stage-5 => parameters of the model can found in this file report/params.json
-2022-02-19/21:09:04		Stage-5 => Training and Hyper parameter tuning Done successfully completed and  saved the  model in models/xgboost/xgboost.pkl
-2022-02-19/21:24:49		Stage-5 => successfully splitted data in the ratio of 7:3
-2022-02-19/21:24:49		Stage-5 => successfully implemented normalization
-2022-02-19/21:24:49		Stage-5 => Training started
-2022-02-19/21:24:49		Stage-5 => Completed
-2022-02-19/21:24:49		Stage-5 => Hyper parameter tuning started
-2022-02-19/21:25:02		Stage-5 => Hyper parameter tuning completed
-2022-02-19/21:25:02		Stage-5 => Model of the accuracy can found in this file report/scores.json
-2022-02-19/21:25:02		Stage-5 => parameters of the model can found in this file report/params.json
-2022-02-19/21:25:02		Stage-5 => Training and Hyper parameter tuning Done successfully completed and  saved the  model in models/xgboost/xgboost.pkl
+
+2022-02-19/22:00:14		Stage-1 => Data extraction from Astra DB has started
+2022-02-19/22:00:52		Stage-1 => Data extraction from Astra DB has successfully completed
+2022-02-19/22:00:54		Stage-2 => successfully Removed unwanted columns
+2022-02-19/22:00:54		Stage-2 => successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv
+2022-02-19/22:00:58		Stage-3 => successfully Done Feature Engineering and saved the file in Data/evaluated/airbnb.csv
+2022-02-19/22:00:57		Stage-3 => successfully Removed outliers for longitude
+2022-02-19/22:00:57		Stage-3 => successfully Removed outliers for minimum_nights
+2022-02-19/22:00:57		Stage-3 => successfully Removed outliers for price
+2022-02-19/22:00:57		Stage-3 => successfully Removed outliers for Bondi Beach
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Manly
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Surry Hills
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Randwick
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Coogee
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Darlinghurst
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Sydney
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Newtown
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Redfern
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Maroubra
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Paddington
+2022-02-19/22:00:58		Stage-3 => successfully Removed outliers for Mosman
+2022-02-19/22:01:02		Stage-4 => successfully saved model for city in models/LabelEncoder/city.pkl
+2022-02-19/22:01:02		Stage-4 => successfully saved model for property_type in models/LabelEncoder/property_type.pkl
+2022-02-19/22:01:02		Stage-4 => successfully saved model for room_type in models/LabelEncoder/room_type.pkl
+2022-02-19/22:01:02		Stage-4 => successfully saved model for cancellation_policy in models/LabelEncoder/cancellation_policy.pkl
+2022-02-19/22:01:02		Stage-4 => successfully Handled missing values for the total data
+2022-02-19/22:01:02		Stage-4 => successfully Added new columns 
+2022-02-19/22:01:02		Stage-4 => successfully performed feature selection
+2022-02-19/22:01:03		Stage-4 => successfully saved the final data in Data/final/airbnb.csv
+2022-02-19/22:01:10		Stage-5 => successfully splitted data in the ratio of 7:3
+2022-02-19/22:01:10		Stage-5 => successfully implemented normalization
+2022-02-19/22:01:10		Stage-5 => Training started
+2022-02-19/22:01:11		Stage-5 => Completed
+2022-02-19/22:01:11		Stage-5 => Hyper parameter tuning started
+2022-02-19/22:02:45		Stage-5 => successfully splitted data in the ratio of 7:3
+2022-02-19/22:02:45		Stage-5 => successfully implemented normalization
+2022-02-19/22:02:45		Stage-5 => Training started
+2022-02-19/22:02:46		Stage-5 => Completed
+2022-02-19/22:02:46		Stage-5 => Hyper parameter tuning started
+2022-02-19/22:03:03		Stage-5 => Hyper parameter tuning completed
+2022-02-19/22:03:03		Stage-5 => Model of the accuracy can found in this file report/scores.json
+2022-02-19/22:03:03		Stage-5 => parameters of the model can found in this file report/params.json
+2022-02-19/22:03:03		Stage-5 => Training and Hyper parameter tuning Done successfully completed and  saved the  model in models/xgboost/xgboost.pkl

@@ -16,6 +16,7 @@ class data:
         self.file=open("Training_logs/Training_log.txt","a+")
     def clean_data(self, config_path):
         try:
+            #removing unwanted columns from Data
             config = read_params(config_path)
             data=config["Data"]["Processed"]
             df = get_data(config_path)

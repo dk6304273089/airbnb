@@ -21,6 +21,7 @@ class feature:
         self.file=open("Training_logs/Training_log.txt","a+")
     def selection(self, config_path):
         try:
+            #feature selection and label encoder steps
             config = read_params(config_path)
             data=config["Data"]["Final"]
             city_model=config["models"]["Labelencoder"]["city"]

@@ -36,6 +36,7 @@ class feature:
         self.file=open("Training_logs/Training_log.txt","a+")
     def engineering(self, config_path):
         try:
+            #removing outliers
             config = read_params(config_path)
             data=config["Data"]["Evaluated"]
             df = get_data(config_path)

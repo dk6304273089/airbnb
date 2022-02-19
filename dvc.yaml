@@ -1,0 +1,41 @@
+stages:
+  extract_data:
+    cmd: python src/extract_data.py --config=config.yaml
+    deps:
+    - src/extract_data.py
+    - Database/secure-connect-airbnb.zip
+    outs:
+    - Data/Raw/airbnb.csv
+  data_cleaning:
+    cmd: python src/data_cleaning.py --config=config.yaml
+    deps:
+    - Data/Raw/airbnb.csv
+    - src/data_cleaning.py
+    outs:
+    - Data/processed/airbnb.csv
+  feature_engineering:
+    cmd: python src/feature_engineering.py --config=config.yaml
+    deps:
+    - Data/processed/airbnb.csv
+    - src/feature_engineering.py
+    outs:
+    - Data/evaluated/airbnb.csv
+  feature_selection:
+    cmd: python src/feature_selection.py --config=config.yaml
+    deps:
+    - Data/evaluated/airbnb.csv
+    - src/feature_selection.py
+    outs:
+    - Data/final/airbnb.csv
+    - models/LabelEncoder/city.pkl
+    - models/LabelEncoder/property_type.pkl
+    - models/LabelEncoder/room_type.pkl
+    - models/LabelEncoder/cancellation_policy.pkl
+  model_training_and_hyper_parameter_tuning:
+    cmd: python src/training_and_hyper_parameter_tuning.py --config=config.yaml
+    deps:
+    - Data/final/airbnb.csv
+    - src/training_and_hyper_parameter_tuning.py
+    outs:
+    - models/xgboost/xgboost.pkl
+    - models/xgboost/sc.pkl
