@@ -39,12 +39,12 @@ class Data_extraction:
             cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider, idle_heartbeat_interval=25)
             session = cluster.connect()
             query="SELECT * FROM air.airbnb";
-            log(self.file, "Data extraction from Astra DB has started")
+            log(self.file, "Stage-1 => Data extraction from Astra DB has started")
             df = pd.DataFrame(list(session.execute(query)))
             df.to_csv(Data, index=False)
-            log(self.file, "Data extraction from Astra DB has successfully completed")
+            log(self.file, "Stage-1 => Data extraction from Astra DB has successfully completed")
         except Exception as e:
-            log(self.file,e)
+            log(self.file,"Stage-1 => Error: {}".format(str(e)))
 
 if __name__=="__main__":
     args=argparse.ArgumentParser()

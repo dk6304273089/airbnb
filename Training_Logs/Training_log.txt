@@ -14,3 +14,34 @@
 2022-02-18/19:36:40		Data extraction from Astra DB has successfully completed
 2022-02-18/19:37:15		successfully Removed unwanted columns
 2022-02-18/19:37:16		successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv
+2022-02-18/20:32:25		Stage-2 => successfully Removed unwanted columns
+2022-02-18/20:32:26		Stage-2 => successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv
+2022-02-18/20:56:46		Stage-3 => Error: 'final'
+2022-02-18/20:57:39		Stage-3 => Error: could not convert string to float: 'NSW 2025'
+2022-02-19/12:07:55		Stage-2 => successfully Removed unwanted columns
+2022-02-19/12:07:55		Stage-2 => successfully Done Data cleaning and saved the file in Data/processed/airbnb.csv
+2022-02-19/12:21:02		Stage-3 => successfully Done Feature Engineering and saved the file in Data/evaluated/airbnb.csv
+2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for longitude
+2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for minimum_nights
+2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for price
+2022-02-19/12:21:01		Stage-3 => successfully Removed outliers for Bondi Beach
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Manly
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Surry Hills
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Randwick
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Coogee
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Darlinghurst
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Sydney
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Newtown
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Redfern
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Maroubra
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Paddington
+2022-02-19/12:21:02		Stage-3 => successfully Removed outliers for Mosman
+2022-02-19/12:58:45		Stage-3 => Error: list indices must be integers or slices, not str
+2022-02-19/13:05:04		Stage-4 => successfully saved model for city in models/LabelEncoder/city.pkl
+2022-02-19/13:05:04		Stage-4 => successfully saved model for property_type in models/LabelEncoder/property_type.pkl
+2022-02-19/13:05:04		Stage-4 => successfully saved model for room_type in models/LabelEncoder/room_type.pkl
+2022-02-19/13:05:04		Stage-4 => successfully saved model for cancellation_policy in models/LabelEncoder/cancellation_policy.pkl
+2022-02-19/13:05:04		Stage-4 => successfully Handled missing values for the total data
+2022-02-19/13:05:04		Stage-4 => successfully Added new columns 
+2022-02-19/13:05:05		Stage-4 => successfully performed feature selection
+2022-02-19/13:05:05		Stage-4 => successfully saved the final data in Data/final/airbnb.csv

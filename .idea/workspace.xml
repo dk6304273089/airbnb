@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01a7a058-8895-44bc-ac2b-b926a9729d4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data_cleaning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/LabelEncoder/cancellation_policy.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/LabelEncoder/property_type.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/LabelEncoder/room_type.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/feature_engineering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/feature_selection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/processed/airbnb.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/processed/airbnb.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Training_Logs/Training_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_Logs/Training_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extract_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/extract_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

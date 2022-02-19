@@ -9,3 +9,12 @@ Credentials:
 Data:
   Raw: Data/Raw/airbnb.csv
   Processed: Data/processed/airbnb.csv
+  Evaluated: Data/evaluated/airbnb.csv
+  Final: Data/final/airbnb.csv
+
+models:
+  Labelencoder:
+    city: models/LabelEncoder/city.pkl
+    property_type: models/LabelEncoder/property_type.pkl
+    room_type: models/LabelEncoder/room_type.pkl
+    cancellation_policy: models/LabelEncoder/cancellation_policy.pkl
