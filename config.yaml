@@ -18,3 +18,9 @@ models:
     property_type: models/LabelEncoder/property_type.pkl
     room_type: models/LabelEncoder/room_type.pkl
     cancellation_policy: models/LabelEncoder/cancellation_policy.pkl
+  xgboost: models/xgboost/xgboost.pkl
+  sc: models/xgboost/sc.pkl
+
+reports:
+  scores: report/scores.json
+  params: report/params.json
