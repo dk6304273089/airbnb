@@ -1,4 +1,5 @@
 {
-    "mean_squared_error": 62.21825960557089,
-    "root_mean_squared_error": 7.887855196792782
+    "mean_squared_error": 2634.4586497888113,
+    "root_mean_squared_error": 51.3269777971469,
+    "mean_absolute_error": 36.70161884479669
 }

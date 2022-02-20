@@ -59,8 +59,6 @@ class feature:
             log(self.file,
                 "Stage-4 => successfully Handled missing values for the total data")
             #Adding new columns to get more information related to data
-            df["cost_per_one_night"] = df["price"] / df["minimum_nights"]
-            df["cost_per_one_night"] = df["cost_per_one_night"].astype(int)
             df["bedroom_per_person"] = df["bedrooms"] / df["accommodates"]
             df["bathroom_per_person"] = df["bathrooms"] / df["accommodates"]
             log(self.file,"Stage-4 => successfully Added new columns ")

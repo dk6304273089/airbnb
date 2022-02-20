@@ -5,17 +5,19 @@ from extract_data import read_params,log
 from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error
 from math import sqrt
 import json
 from sklearn.preprocessing import StandardScaler
 from xgboost import XGBRegressor
 import argparse
 params={
- "learning_rate": [0.05, 0.10, 0.15, ] ,
+ "learning_rate": [0.05, 0.10, 0.15] ,
  "max_depth": [ 3,  6, 8,  15],
  "min_child_weight" : [ 1, 3, 5, 7 ],
  "gamma": [ 0.0 , 0.3, 0.4 ],
- "colsample_bytree" : [ 0.3, 0.4 , 0.7 ]
+ "colsample_bytree" : [ 0.3, 0.4 , 0.7 ],
+ "n_estimators": [3,7, 10, 30],
 }
 def get_data(config_path):
     config = read_params(config_path)
@@ -58,7 +60,8 @@ class hyper:
             with open(scores_file, "w") as f:
                 scores = {
                     "mean_squared_error": mean_squared_error(y_test, predictions),
-                    "root_mean_squared_error": sqrt(mean_squared_error(y_test, predictions))
+                    "root_mean_squared_error": sqrt(mean_squared_error(y_test, predictions)),
+                    "mean_absolute_error":mean_absolute_error(y_test, predictions)
                 }
                 json.dump(scores, f, indent=4)
             log(self.file, "Stage-5 => Model of the accuracy can found in this file {}".format(scores_file))
